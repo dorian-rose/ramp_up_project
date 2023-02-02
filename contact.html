@@ -5,41 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5d8f2cece5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./about_me.html">About Me</a></li>
-        <li>To Add Content</li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about_me.html">About Me</a></li>
+          <li><a href="./travel.html">Travel</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <h1>Contact me</h1>
-    <header></header>
     <section>
-      If you are here, it's because you have a question or a suggestion that
-      you'd like to share with me. Don't hesitate to get in contact!
+      <h3>
+        If you are here, it's because you have a question or a suggestion that
+        you'd like to share with me. Don't hesitate to get in contact!
+      </h3>
     </section>
-    <div class="contact-methods">
-      <h2>Email:</h2>
-      <p>
-        <a href="mailto:dorianrkelly@gmail.com">dorianrkelly@gmail.com</a>
-      </p>
+    <div class="contact grid grid-2-columns secondary">
+      <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Your name.." />
 
-      <h2>Instagram</h2>
-      <p>
-        <a href="https://www.instagram.com/doriandeekay/" target="_blank"
-          >@doriankelly</a
-        >
-      </p>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Your last name.." />
 
-      <h2>Facebook:</h2>
-      <p>
-        <a href="/" target="_blank">Dorian Kelly</a>
-      </p>
+        <label for="country">Country</label>
+        <select id="country">
+          <option value="australia">Australia</option>
+          <option value="spain">Spain</option>
+          <option value="mexico">Mexico</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          placeholder="Write something.."
+          style="height: 100px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+      <img src="media/callejon_oaxaca.jpg" alt="A street in Oaxaca, Mexico" />
     </div>
 
-    <footer></footer>
+    <footer class="contact-links">
+      <a href="https://www.instagram.com/doriandeekay/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com/dorian-rose" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+        target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </footer>
   </body>
 </html>

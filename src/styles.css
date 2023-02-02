@@ -1,33 +1,29 @@
 body {
   font-family: "Poppins", sans-serif;
-
   max-width: 1400px;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav li {
   display: inline;
 }
 
-.text-center {
-  text-align: center;
-}
-.small-margin {
-  margin: 20px 30px;
+hgroup {
+  padding: 150px 60px;
 }
 
-h1 {
+.home h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1.5;
-
+  color: white;
   margin: 0;
 }
 h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
-  text-align: center;
   margin: 0;
 }
 
@@ -36,24 +32,23 @@ h3 {
   font-weight: 900;
   font-size: 24px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 5px;
 }
-hgroup {
-  padding: 150px 60px;
-}
 
-.hero {
+header.hero {
   color: white;
   border: 1px solid lightgrey;
   text-align: center;
   background-image: url(../media/san_cristobal.jpg);
   background-size: cover;
+  height: auto;
 }
-
 .hero a {
+  margin: 30px auto;
+}
+header a {
   display: inline-block;
-  margin-top: 30px;
+  margin: 70px auto;
   padding: 16px 32px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -62,12 +57,9 @@ hgroup {
   text-decoration: none;
 }
 
-section {
-  padding: 80px 100px;
-  max-width: 1200px;
-}
-section.secondary {
-  background-color: whitesmoke;
+header a:hover {
+  background-color: #c1725c;
+  color: white;
 }
 
 img {
@@ -75,49 +67,31 @@ img {
   display: block;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 60px;
+section {
+  padding: 80px 100px;
+  max-width: 1200px;
+}
+.secondary {
+  background-color: whitesmoke;
 }
 
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
-}
-.grid-2-columns-no-gap {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
-}
 main h2 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
   text-align: start;
   margin: 10px 0;
 }
 main h3 {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
   opacity: 0.5;
   text-align: start;
-  margin: 0;
 }
+
 main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
   margin: 20px 0;
   text-align: center;
-}
-main h5 {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 1.5;
 }
 
 main p {
@@ -132,7 +106,7 @@ main p {
   margin: 10px 0 60;
 }
 
-.card-body {
+.card header {
   margin: 30px 30px;
 }
 
@@ -152,10 +126,28 @@ main p {
   letter-spacing: 3px;
   margin: 30px;
 }
+.card .btn:hover {
+  background-color: #c1725c;
+}
+.grid {
+  display: grid;
+  grid-gap: 60px;
+}
 
-.embed {
-  width: 100%;
-  aspect-ratio: 1/1;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+.grid-2-columns-no-gap {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+.small-margin {
+  margin: 20px 30px;
 }
 
 footer {
@@ -196,6 +188,59 @@ footer.contact-links {
 }
 .contact-links a {
   margin: 20px;
+}
+
+/* not home pages:*/
+header {
+  background-image: url(../media/header.jpg);
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 40px;
+}
+/*Darker background code: background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../media/header.jpg);*/
+h1 {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.5;
+  color: #c24d2c;
+  margin: 0;
+}
+
+/* contact form:*/
+.contact {
+  margin: 50px;
+  padding: 50px;
+  border-radius: 5px;
+}
+.contact img {
+  margin: 20px 30px 30px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 6px 0 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #c24d2c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #c1725c;
 }
 
 @media (max-width: 800px) {
