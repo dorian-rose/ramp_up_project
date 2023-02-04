@@ -5,35 +5,12 @@ body {
   text-align: center;
 }
 
+/* Navigation (all pages)*/
 nav li {
   display: inline;
 }
 
-hgroup {
-  padding: 150px 60px;
-}
-
-.home h1 {
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1.5;
-  color: white;
-  margin: 0;
-}
-h2 {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h3 {
-  margin: 0;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-}
+/* header and headings (home page only)*/
 
 header.hero {
   color: white;
@@ -46,6 +23,17 @@ header.hero {
 .hero a {
   margin: 30px auto;
 }
+.hero hgroup {
+  padding: 150px 60px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  color: white;
+}
+
+/* header and headings (all pge : home and secondary)*/
+
 header a {
   display: inline-block;
   margin: 70px auto;
@@ -62,6 +50,43 @@ header a:hover {
   color: white;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1.5;
+  color: #c24d2c;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+/* not home pages:*/
+header.secondary {
+  background-image: url(../media/header.jpg);
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 40px;
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../media/header.jpg);*/
+}
+.secondary-page h3 {
+  margin: 50px;
+}
+
+/* main content (all pages)*/
+
 img {
   width: 100%;
   display: block;
@@ -70,9 +95,6 @@ img {
 section {
   padding: 80px 100px;
   max-width: 1200px;
-}
-.secondary-background {
-  background-color: whitesmoke;
 }
 
 main h2 {
@@ -99,22 +121,32 @@ main p {
   line-height: 1.5;
   opacity: 0.7;
   margin: 0;
+  text-align: start;
 }
+
+/* card styling (currently only used on homepage*/
 
 .card {
   background-color: #ffff;
   margin: 10px 0 60;
 }
 
-.card header {
-  margin: 30px 30px;
+.card img {
+  margin-bottom: 30px;
 }
 
-.card-footer {
+.card footer {
   margin: 30px 30px 50px;
+  padding: 0;
+  background: white;
 }
 
-.card .btn {
+.card p {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.card a {
   display: block;
   color: white;
   background-color: #c24d2c;
@@ -129,6 +161,17 @@ main p {
 .card .btn:hover {
   background-color: #c1725c;
 }
+
+/* styling classes (all pages, wherever applied*/
+
+.grey-background {
+  background-color: whitesmoke;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 60px;
@@ -150,80 +193,31 @@ main p {
   margin: 20px 30px;
 }
 
+/* footer (all pages)*/
 footer {
-  color: white;
-  padding: 40px 40px;
-  background-image: linear-gradient(#c24d2c, #c1725c);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 50px 40px;
+  background: linear-gradient(#c24d2c, #c1725c);
 }
 
-footer .grid-3-columns {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
-footer h4 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5px;
-  opacity: 0.7;
-}
-
-footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-footer p {
-  font-size: 16px;
-  line-height: 1.5;
-  opacity: 0.7;
-}
 footer a {
   color: white;
-}
-footer.contact-links {
   text-align: center;
-}
-.contact-links a {
   margin: 20px;
-}
-
-/* not home pages:*/
-header.secondary {
-  background-image: url(../media/header.jpg);
-  background-size: cover;
-  height: 200px;
-  margin-bottom: 40px;
-}
-/*Darker background code: background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../media/header.jpg);*/
-h1 {
-  font-weight: 700;
-  font-size: 74px;
-  line-height: 1.5;
-  color: #c24d2c;
-  margin: 0;
+  font-size: 25px;
 }
 
 /* contact form:*/
 .contact {
-  margin: 50px;
+  margin: 70px 50px;
   padding: 50px;
   border-radius: 5px;
 }
-img:not(.card) {
+.secondary-page img {
   margin: 20px 30px 30px 0;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-.contact img {
-  margin: 20px 30px 30px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
 input[type="text"],
 select,
 textarea {
@@ -249,15 +243,27 @@ input[type="submit"]:hover {
   background-color: #c1725c;
 }
 
+/* media query*/
+
 @media (max-width: 800px) {
+  /* header and headings (home page only)*/
+
+  header.hero {
+    padding: 60px 0;
+  }
+  .hero a {
+    margin-top: 30px;
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+
+  /* main content (all pages)*/
+
   section {
     margin: 20px;
     padding: 20px;
   }
 
-  .hero {
-    padding: 60px 0;
-  }
   h1 {
     font-size: 48px;
     line-height: 1;
@@ -273,12 +279,11 @@ input[type="submit"]:hover {
     font-size: 12px;
     line-height: 1;
   }
-
-  .hero a {
-    margin-top: 30px;
-    padding: 8px 16px;
-    font-size: 10px;
+  main h2 {
+    font-size: 30px;
   }
+
+  /* styling classes (all pages, wherever applied*/
   .grid {
     grid-gap: 20px;
     grid-template-columns: 1fr;
@@ -286,13 +291,15 @@ input[type="submit"]:hover {
   .grid-3-columns {
     margin-top: 20px;
   }
-  .card-header img {
-    display: none;
-  }
+
+  /* card styling (currently only used on homepage*/
+
   .card {
     margin: 10px 0;
   }
-
+  .card-header img {
+    display: none;
+  }
   .card-body {
     margin: 20px;
   }
@@ -300,27 +307,8 @@ input[type="submit"]:hover {
   .card-footer {
     margin: 20px;
   }
-
-  .embed {
-    aspect-ratio: 16/9;
-  }
-
-  main h2 {
-    font-size: 30px;
-  }
-
+  /* footer (all pages)*/
   footer {
     padding: 20px;
-  }
-
-  footer h4 {
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  footer p {
-    font-size: 12px;
-    line-height: 1.5;
   }
 }
