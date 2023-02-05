@@ -81,8 +81,12 @@ header.secondary {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../media/header.jpg);*/
 }
+.secondary-page section {
+  padding-top: 20px;
+}
+
 .secondary-page h3 {
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 /* main content (all pages)*/
@@ -132,7 +136,6 @@ figcaption {
   font-size: 10px;
   font-style: italic;
 }
-/* main content (only some pages pages)*/
 .jump-links {
   margin: 15px 0;
 }
@@ -147,6 +150,7 @@ figcaption {
   opacity: 1;
   border: none;
 }
+
 /* card styling (currently only used on homepage*/
 
 .card {
