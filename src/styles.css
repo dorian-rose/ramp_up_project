@@ -124,6 +124,29 @@ main p {
   text-align: start;
 }
 
+figure {
+  margin: 0;
+  margin-bottom: 40px;
+}
+figcaption {
+  font-size: 10px;
+  font-style: italic;
+}
+/* main content (only some pages pages)*/
+.jump-links {
+  margin: 15px 0;
+}
+.jump-links a {
+  color: black;
+  opacity: 0.7;
+
+  border: 1px solid grey;
+  text-decoration: none;
+}
+.jump-links a:hover {
+  opacity: 1;
+  border: none;
+}
 /* card styling (currently only used on homepage*/
 
 .card {
