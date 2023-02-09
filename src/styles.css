@@ -1,5 +1,8 @@
+* {
+  font-family: sans-serif;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
   max-width: 1400px;
   margin: 0 auto;
   text-align: center;
@@ -162,7 +165,7 @@ figcaption {
   margin-bottom: 30px;
 }
 
-.card footer {
+.card .footer {
   margin: 30px 30px 50px;
   padding: 0;
   background: white;
