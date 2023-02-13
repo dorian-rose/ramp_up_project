@@ -16,10 +16,12 @@
     <header class="secondary">
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./about_me.html">About Me</a></li>
-          <li><a href="./travel.html">Travel</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="index.html" target="_blank">Home</a></li>
+          <li><a href="./about_me.html" target="_blank">About Me</a></li>
+          <li><a href="./travel.html" target="_blank">Travel</a></li>
+          <li>
+            <a class="active" href="./contact.html" target="_blank">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -27,6 +29,7 @@
     <main class="secondary-page">
       <h1>Contact me</h1>
       <section>
+        <h2 class="text-center">Get in touch with me</h2>
         <h3>
           If you are here, it's because you have a question or a suggestion that
           you'd like to share with me. Don't hesitate to get in contact!
@@ -35,10 +38,15 @@
         <div class="contact grid grid-2-columns grey-background">
           <form>
             <label for="fname">First Name</label>
-            <input type="text" id="fname" placeholder="Your name.." />
+            <input type="text" id="fname" placeholder="Your name.." required />
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" placeholder="Your last name.." />
+            <input
+              type="text"
+              id="lname"
+              placeholder="Your last name.."
+              required
+            />
 
             <label for="country">Country</label>
             <select id="country">
@@ -52,6 +60,7 @@
               id="subject"
               placeholder="Write something.."
               style="height: 100px"
+              type="text"
             ></textarea>
 
             <input type="submit" value="Submit" />
